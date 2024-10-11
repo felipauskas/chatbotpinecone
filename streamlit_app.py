@@ -37,7 +37,7 @@ else:
             st.markdown(prompt)
 
         # Prepare the payload for Pinecone API
-        url = f"https://controller.{pinecone_environment}.pinecone.io/assistant/chat/{assistant_name}"
+        url = f"https://prod-1-data.ke.pinecone.io/assistant/chat/{assistant_name}"
         headers = {
             "Api-Key": pinecone_api_key,
             "Content-Type": "application/json"
